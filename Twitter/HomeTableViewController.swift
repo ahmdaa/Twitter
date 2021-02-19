@@ -18,6 +18,7 @@ class HomeTableViewController: UITableViewController {
     @IBAction func onLogout(_ sender: Any) {
         TwitterAPICaller.client?.logout()
         self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.setValue(false, forKey: "userLoggedIn")
     }
     
     // MARK: - Table view data source
