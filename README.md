@@ -1,6 +1,6 @@
 # Project 3 - Twitter
 
-**Twitter** is a basic twitter app to read your tweets.
+A basic twitter clone to read your tweets.
 
 Time spent: **2** hours spent in total
 
@@ -19,9 +19,6 @@ The following **bonus** features are implemented:
 - [x] User can pull to refresh. (1pt)
 - [x] User can load past tweets infinitely. (2pts)
 
-## Video Walkthrough
+## App Walkthrough GIF
 
-Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+<img src='http://g.recordit.co/TEHTLTV2wQ.gif' width=250><br>
