@@ -96,8 +96,8 @@
                                         <constraint firstItem="v9F-zz-H5n" firstAttribute="top" secondItem="G1I-Z8-8wt" secondAttribute="bottom" constant="4" id="BEG-b3-pmM"/>
                                         <constraint firstItem="v9F-zz-H5n" firstAttribute="trailing" secondItem="6ya-9g-lj6" secondAttribute="trailingMargin" id="IHw-Sc-reW"/>
                                         <constraint firstItem="ZG7-9k-Obe" firstAttribute="leading" secondItem="6ya-9g-lj6" secondAttribute="leadingMargin" id="SYC-1u-PeU"/>
-                                        <constraint firstItem="G1I-Z8-8wt" firstAttribute="trailing" secondItem="6ya-9g-lj6" secondAttribute="trailingMargin" id="WYy-a3-jNc"/>
-                                        <constraint firstItem="v9F-zz-H5n" firstAttribute="bottom" secondItem="6ya-9g-lj6" secondAttribute="bottomMargin" id="eLq-jc-hqZ"/>
+                                        <constraint firstItem="v9F-zz-H5n" firstAttribute="bottom" secondItem="6ya-9g-lj6" secondAttribute="bottomMargin" id="UQn-V2-1sT"/>
+                                        <constraint firstItem="G1I-Z8-8wt" firstAttribute="trailing" secondItem="6ya-9g-lj6" secondAttribute="trailingMargin" id="oFE-jq-Iee"/>
                                         <constraint firstItem="v9F-zz-H5n" firstAttribute="leading" secondItem="ZG7-9k-Obe" secondAttribute="trailing" constant="8" symbolic="YES" id="uvl-gp-Ipt"/>
                                     </constraints>
                                 </tableViewCellContentView>
