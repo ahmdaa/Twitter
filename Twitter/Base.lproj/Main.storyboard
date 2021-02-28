@@ -32,15 +32,18 @@
                                     <action selector="onLoginButton:" destination="01Y-EQ-zU2" eventType="touchUpInside" id="xIw-RH-wrn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TwitterLogoBlue" translatesAutoresizingMaskIntoConstraints="NO" id="Rak-GR-amy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitterLogoBlue" translatesAutoresizingMaskIntoConstraints="NO" id="Rak-GR-amy">
                                 <rect key="frame" x="82" y="118" width="250" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BLe-Fb-FV4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Rak-GR-amy" firstAttribute="top" secondItem="BLe-Fb-FV4" secondAttribute="top" constant="74" id="3U4-b3-hhQ"/>
+                            <constraint firstItem="Rak-GR-amy" firstAttribute="leading" secondItem="BLe-Fb-FV4" secondAttribute="leading" constant="82" id="LJG-ft-im2"/>
                             <constraint firstItem="0Eq-kO-eFQ" firstAttribute="centerY" secondItem="8dj-ID-JPC" secondAttribute="centerY" id="P9t-Iq-ayL"/>
+                            <constraint firstItem="0Eq-kO-eFQ" firstAttribute="top" secondItem="Rak-GR-amy" secondAttribute="bottom" constant="95" id="WPf-AS-dn6"/>
+                            <constraint firstItem="BLe-Fb-FV4" firstAttribute="trailing" secondItem="Rak-GR-amy" secondAttribute="trailing" constant="82" id="xYV-5B-K1G"/>
                             <constraint firstItem="0Eq-kO-eFQ" firstAttribute="centerX" secondItem="8dj-ID-JPC" secondAttribute="centerX" id="xuC-Sc-njf"/>
                         </constraints>
                     </view>
@@ -170,16 +173,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c8e-hP-ydq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
+                                <rect key="frame" x="20" y="104" width="374" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MD-aG-7XG" userLabel="CharCount Label">
+                                <rect key="frame" x="363" y="227" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qv1-BY-Zzb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qv1-BY-Zzb" firstAttribute="trailing" secondItem="1MD-aG-7XG" secondAttribute="trailing" constant="20" id="NfU-Q6-F5Q"/>
+                            <constraint firstItem="1MD-aG-7XG" firstAttribute="leading" secondItem="qv1-BY-Zzb" secondAttribute="leading" constant="363" id="Ztc-v2-IjR"/>
+                            <constraint firstItem="qv1-BY-Zzb" firstAttribute="bottom" secondItem="1MD-aG-7XG" secondAttribute="bottom" constant="614" id="lFR-DT-D0K"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eBc-CG-dhT">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="PEk-if-7jS">
@@ -196,12 +210,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="charCountLabel" destination="1MD-aG-7XG" id="5Df-Vi-xpB"/>
                         <outlet property="tweetTextView" destination="c8e-hP-ydq" id="0lR-So-1iC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJc-kv-zrI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3862.3188405797105" y="142.63392857142856"/>
+            <point key="canvasLocation" x="3860.8695652173915" y="141.96428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nzi-8U-EYK">
@@ -252,6 +267,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
