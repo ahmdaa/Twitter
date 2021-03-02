@@ -18,6 +18,7 @@ class TweetViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tweetTextView.becomeFirstResponder()
         tweetTextView.delegate = self
     }

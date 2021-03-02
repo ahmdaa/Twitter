@@ -1,20 +1,21 @@
 //
-//  TweetCell.swift
+//  ImageTableViewCell.swift
 //  Twitter
 //
-//  Created by Ahmed Abdalla on 2/19/21.
+//  Created by Ahmed Abdalla on 3/1/21.
 //  Copyright © 2021 Dan. All rights reserved.
 //
 
 import UIKit
 
-class TweetTableViewCell: UITableViewCell {
-    
+class ImageTableViewCell: UITableViewCell {
+
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tweetContent: UILabel!
     @IBOutlet weak var retweetButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var tweetImage: UIImageView!
     
     var favorited = false
     var tweetId = 0
@@ -68,5 +69,5 @@ class TweetTableViewCell: UITableViewCell {
             favoriteButton.setImage(UIImage(named: "favor-icon"), for: UIControl.State.normal)
         }
     }
-    
+
 }

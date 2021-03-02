@@ -1,4 +1,3 @@
-
 # Twitter - Part II
 
 A basic app to view, compose, favorite, and retweet tweets.
