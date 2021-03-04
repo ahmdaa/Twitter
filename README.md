@@ -20,7 +20,7 @@ The following **bonus** features are implemented:
 
 ## App Walkthrough GIF
 
-<img src='http://g.recordit.co/aHOfufF3cc.gif' width=250><br>
+<img src='http://g.recordit.co/DepEhFszRV.gif' width=250><br>
 
 # Twitter - Part I
 
